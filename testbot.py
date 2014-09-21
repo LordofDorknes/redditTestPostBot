@@ -1,8 +1,8 @@
 import time # unnecessary import
 import praw #import reddit api
-password = 'password'
-"""password variable for login,
-TODO: make it load from cofig"""
+f = open('password.txt', 'r') # read password from file
+password = f.read()
+#password variable for login set from file
 
 user_agent = ("Some Testing Bot v 0.0.1 by /u/LordofDorknes"
               "github.com/LordofDorknes/redditTestPostBot")
@@ -13,3 +13,4 @@ r.login('TestingBotAccount1', password) #log in
 PostTitle = 'Test Post 1'
 PostText = 'Test post among many others'
 r.submit('test',PostTitle,text=PostText)
+
