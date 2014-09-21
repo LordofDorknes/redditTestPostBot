@@ -1,6 +1,7 @@
 import time # unnecessary import
 import praw #import reddit api
-password = "Password" """password variable for login,
+password = 'password'
+"""password variable for login,
 TODO: make it load from cofig"""
 
 user_agent = ("Some Testing Bot v 0.0.1 by /u/LordofDorknes"
